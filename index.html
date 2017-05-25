@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*清除掉默认样式*/
+        div,body{margin: 0;padding: 0;font-size: 16px;}
+
+        /*设置整体居中，以及头部图片的宽高设置*/
+        .contain{position:relative;margin: auto;width: 800px;}
+        .header img{width:100%;height: 417px;}
+
+        /*设置个人的头像*/
+        .log{
+            position: absolute;
+            top: 352px;
+            right: 35px;        }
+        .log .logName{
+            position:absolute;
+            top:21px;
+            right:127px;
+            width:50px;
+            color: #fff;        }
+        .log img{margin-left:10px;width: 100px;height: 100px;}
+
+        /*设置朋友圈内容的居中*/
+        #wrap{margin-top: 100px;margin-left:auto;margin-right:auto;overflow:hidden;width: 750px;}
+
+        /*朋友圈动态的具体样式*/
+        .wrapBody{margin-top:20px;border-bottom: 1px solid #333;overflow: hidden;}
+        .avatar{float:left}
+        .avatar img{width: 100px;height: 100px;}
+        .content{float: left;margin-left:10px;width: 630px; }
+
+        .onlineName{display:inline-block;argin-bottom: 10px;color: #4f65c3;}
+
+        /*删除动态按钮*/
+        .deletecon{float: right;}
+        .deletecon button{width: 22px;height: 22px;border: none;cursor: pointer;display: none;}
+
+        .conText{margin-bottom: 10px;width: 600px;}
+        .conImages{margin-right: 2px;margin-bottom: 2px;}
+        .oonImages img{height: 100px;width: 100px;}
+
+        /*赞的部分*/
+        .commentZan{margin-top:8px;margin-bottom: 33px;}
+        .zan_all{margin-left:10px;float: left;font-size: 14px;}
+        .zan{display: inline-block;float: right;cursor: pointer;}
+
+        /*评论区的部分*/
+        .commenttext{font-size: 14px;}
+        .commenttext img{width: 24px;height: 24px;}
+
+        .text{margin-top:6px;width: 520px;}
+
+    </style>
+</head>
+<body>
+   <div class="contain">
+       <div class="header"><img src="weixin.jpg"></div>
+       <div class="log">
+           <span class="logName">小Ling</span>
+           <img src="timg.jpg" alt="">
+       </div>
+       <div id="wrap">
+         <div class="wrapBody">
+             <div class="avatar">
+                 <img src="timg%20(1).jpg">
+             </div>
+             <div class="content">
+                 <div class="onlineName">yo&nbsp;&nbsp;yo</div>
+                 <div class="deletecon">
+                     <button type="button">x</button>
+                 </div>
+                 <div class="conText">
+                     welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                     welcome to Pattaya~~
+                     welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                     welcome to Pattaya~~
+                     welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                     welcome to Pattaya~~
+                 </div>
+                 <div class="conImages">
+                     <img src="chenwt%20(1).jpg" alt="">
+                 </div>
+                 <div class="commentZan">
+                     <div class="zan_all">4个人觉得很赞</div>
+                     <div class="zan">
+                         <img src="zan%20(2).jpg"><span class="zan1">赞</span>
+                     </div>
+                 </div>
+                 <div class="commenttext">
+                     <img src="timg%20(2).jpg" alt="">
+                     <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                 </div>
+                 <div class="commenttext">
+                     <img src="timg%20(2).jpg" alt="">
+                     <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                 </div>
+                 <div class="commenttext">
+                     <img src="timg%20(2).jpg" alt="">
+                     <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                 </div>
+                 <textarea name="" class="text" cols="100" rows="1"></textarea>
+             </div>
+         </div>
+           <div class="wrapBody">
+               <div class="avatar">
+                   <img src="timg%20(2).jpg" alt="">
+               </div>
+               <div class="content">
+                   <div class="onlineName">yo&nbsp;&nbsp;yo</div>
+                   <div class="deletecon">
+                       <button type="button">x</button>
+                   </div>
+                   <div class="conText">
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                   </div>
+                   <div class="conImages">
+                       <img src="chenwt%20(2).jpg" alt="">
+                   </div>
+                   <div class="commentZan">
+                       <div class="zan_all">4个人觉得很赞</div>
+                       <div class="zan">
+                           <img src="zan%20(2).jpg"><span class="zan1">赞</span>
+                       </div>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <textarea name="" class="text" cols="100" rows="1"></textarea>
+               </div>
+           </div>
+           <div class="wrapBody">
+               <div class="avatar">
+                   <img src="timg%20(3).jpg" alt="">
+               </div>
+               <div class="content">
+                   <div class="onlineName">yo&nbsp;&nbsp;yo</div>
+                   <div class="deletecon">
+                       <button type="button">x</button>
+                   </div>
+                   <div class="conText">
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                   </div>
+                   <div class="conImages">
+                       <img src="chenwt%20(3).jpg" alt="">
+                   </div>
+                   <div class="commentZan">
+                       <div class="zan_all">4个人觉得很赞</div>
+                       <div class="zan">
+                           <img src="zan%20(2).jpg"><span class="zan1">赞</span>
+                       </div>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <textarea name="" class="text" cols="100" rows="1"></textarea>
+               </div>
+           </div>
+           <div class="wrapBody">
+               <div class="avatar">
+                   <img src="timg%20(4).jpg" alt="">
+               </div>
+               <div class="content">
+                   <div class="onlineName">yo&nbsp;&nbsp;yo</div>
+                   <div class="deletecon">
+                       <button type="button">x</button>
+                   </div>
+                   <div class="conText">
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                   </div>
+                   <div class="conImages">
+                       <img src="chenwt%20(1).jpg" alt="">
+                   </div>
+                   <div class="commentZan">
+                       <div class="zan_all">4个人觉得很赞</div>
+                       <div class="zan">
+                           <img src="zan%20(2).jpg"><span class="zan1">赞</span>
+                       </div>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <textarea name="" class="text" cols="100" rows="1"></textarea>
+               </div>
+           </div>
+           <div class="wrapBody">
+               <div class="avatar">
+                   <img src="timg%20(1).jpg" alt="">
+               </div>
+               <div class="content">
+                   <div class="onlineName">yo&nbsp;&nbsp;yo</div>
+                   <div class="deletecon">
+                       <button type="button">x</button>
+                   </div>
+                   <div class="conText">
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                       welcome to Pattaya~~welcome to Pattaya~~welcome to Pattaya~~
+                       welcome to Pattaya~~
+                   </div>
+                   <div class="conImages">
+                       <img src="chenwt%20(4).jpg" alt="">
+                   </div>
+                   <div class="commentZan">
+                       <div class="zan_all">4个人觉得很赞</div>
+                       <div class="zan">
+                           <img src="zan%20(2).jpg"><span class="zan1">赞</span>
+                       </div>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <div class="commenttext">
+                       <img src="timg%20(2).jpg" alt="">
+                       <span>:这个人啥这么眼熟~~~好像哪儿见过</span>
+                   </div>
+                   <textarea name="" class="text" cols="100" rows="1"></textarea>
+               </div>
+           </div>
+       </div>
+   </div>
+<script>
+
+       //删除动态的点击事件
+       var wrapBody=document.getElementsByClassName('wrapBody');
+        var btn=document.getElementsByTagName('button');
+        var wrap=document.getElementById("wrap");
+
+        for(var i=0;i<btn.length;i++){
+            wrapBody[i].onmouseover=function () {
+               /* console.log(this.childNodes[3].childNodes[3].childNodes[1]);*/
+                this.childNodes[3].childNodes[3].childNodes[1].style.display="block";
+            }
+            wrapBody[i].onmouseout=function () {
+                this.childNodes[3].childNodes[3].childNodes[1].style.display="none";
+            }
+            btn[i].onclick=function () {
+               /* for(var j=0;j<btn.length;j++){
+                    console.log(this.parentNode.parentNode.parentNode);*
+                    wrap[j].removeChild(this.parentNode.parentNode.parentNode);
+                }*/
+               wrap.removeChild(this.parentNode.parentNode.parentNode);
+
+            }
+        }
+
+/*       /!*点赞事件*!/
+        var zan1=document.getElementsByClassName('zan1');
+        var zan_all = document.getElementsByClassName("zan_all");
+       for (var j=0;j<zan1.length;j++) {
+           var zan_text=zan_all[j].innerHTML;
+            zan1[j].onclick = function () {
+                /!*console.log(this);*!/
+              if (this.innerHTML == "赞") {
+                    this.innerHTML = "取消赞";
+                  this.parentNode.parentNode.childNodes[1].innerHTML="我和"+zan_text;
+                } else {
+                    this.innerHTML = "赞";
+                  this.parentNode.parentNode.childNodes[1].innerHTML=zan_text;
+                }
+            }
+        }*/
+
+        /*对赞进行改进*/
+        var zan = document.getElementsByClassName("zan");
+       var zan_all = document.getElementsByClassName("zan_all");
+       for(var i=0;i<zan.length;i++){
+           var zan_text=zan_all[i].innerHTML;
+           zan[i].onclick=function () {
+              /* console.log(this.childNodes[2].innerHTML);*/
+               if(this.childNodes[2].innerHTML=="赞"){
+                   this.childNodes[1].src="zan%20(1).jpg";
+                   this.childNodes[2].innerHTML = "取消赞";
+                   /*console.log(this.parentNode.childNodes[1].innerHTML);*/
+                   this.parentNode.childNodes[1].innerHTML="我和"+zan_text;
+               }else {
+                   this.childNodes[1].src="zan%20(2).jpg";
+                   this.childNodes[2].innerHTML = "赞";
+                   this.parentNode.childNodes[1].innerHTML=zan_text;
+               }
+           }
+       }
+
+        /*评论框变大小事件*/
+       var wrap=document.getElementById("wrap");
+       wrap.onmouseup=function (ev) {
+           var ev=ev||window.event;
+           var target=ev.target||ev.srcElement;
+           /*console.log(target);*/
+           if(target.nodeName.toLowerCase()=="textarea"){
+               var text=document.getElementsByClassName("text");
+               for(var i=0;i<text.length;i++){
+                   text[i].onclick=function () {
+                      this.rows="3";
+                   }
+               }
+           }
+       }
+       /*   /!*评论框变大小事件*!/
+        var text=document.getElementsByClassName('text');
+        for(var z=0;z<text.length;z++){
+        text[z].onclick=function () {
+        this.rows="3";
+        event.stopPropagation();
+        }
+        document.body.onclick=function () {
+        /!*console.log(this);*!/
+
+        }
+        }*/
+
+</script>
+</body>
+</html>
