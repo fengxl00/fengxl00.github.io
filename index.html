@@ -335,7 +335,7 @@
 
         /*评论框变大小事件*/
        var wrap=document.getElementById("wrap");
-       wrap.onmouseup=function (ev) {
+       wrap.onclick=function (ev) {
            var ev=ev||window.event;
            var target=ev.target||ev.srcElement;
            /*console.log(target);*/
@@ -344,6 +344,14 @@
                for(var i=0;i<text.length;i++){
                    text[i].onclick=function () {
                       this.rows="3";
+                   }
+               }
+           }
+           else{
+               this.onmouseover=function () {
+                   var textarea1=document.getElementsByTagName("textarea");
+                   for (var i=0;i<textarea1.length;i++){
+                       textarea1[i].rows="1";
                    }
                }
            }
